@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block profile %}
+<div id="container">
+		<div class="container-a">
+				<img src="{{url_for('static',filename='me.jpg')}}" alt="Photo Goes here">
+				<p> @hb</p>
+				<p> Kingston, Jamaica</p>
+				<p> Joined {{datejoined}}</p>
+		</div>
+		<div class="container-b">
+			<p>Who am i? The girls them sugar </p>
+			<div class="information">
+				<div class="info">
+					<h5>6</h5>
+					<p>posts</p>
+				</div>
+				<div class="info">
+					<h5>1.5M</h5>
+					<p>followers</p>
+				</div>
+				<div class="info">
+					<h5>20</h5>
+					<p>following</p>
+				</div>
+				
+			</div>
+			<button class="follow"> Follow </button>
+		</div>
+
+	</div>
+{% endblock %}
